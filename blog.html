@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Instituto de olhos ABC | Blog</title>
+    <link rel="icon" href="assets/images/fav-icon.png">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/special-classes.css">
+    <link rel="stylesheet" href="assets/css/superclasses.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="loader-mask">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <script type="module">
+        document.addEventListener("DOMContentLoaded", function () {
+            const typebotInitScript = document.createElement("script");
+            typebotInitScript.type = "module";
+            typebotInitScript.textContent = `
+          import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js';
+          Typebot.initBubble({
+            typebot: "lead-gen-with-ai-envzrm9",
+            theme: { button: { backgroundColor: "#0042DA" } },
+          });
+        `;
+            document.head.appendChild(typebotInitScript);
+
+            const tryOpenTypebot = () => {
+                if (window.Typebot && typeof window.Typebot.open === 'function') {
+                    window.Typebot.open();
+                } else {
+                    setTimeout(tryOpenTypebot, 500);
+                }
+            };
+
+            setTimeout(tryOpenTypebot, 5000);
+        });
+    </script>
+
+    <!-- HEADER SECTION -->
+    <header class="w-100 float-left header-con">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="index.html">
+                    <figure class="mb-0">
+                        <img src="assets/images/logo.png" alt="logo" class="logo__img">
+                    </figure>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link p-0" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="about-us.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="services.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="doctors.html">Médicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="header-contact d-flex align-items-center">
+                        <div class="search-field">
+                            <a href="#">
+                                <img src="assets/images/search-icon.png" alt="search-icon">
+                            </a>
+                        </div>
+                        <div class="phone d-flex align-items-center">
+                            <figure class="mb-0">
+                                <img src="assets/images/headphone-icon.png" alt="headphone-icon">
+                            </figure>
+                            <div class="phone-txt">
+                                <span class="d-block">Agende uma Consulta:</span>
+                                <a href="tel:+551144332620">(11) 4433-2620</a><br />
+                                <a href="tel:+551144332620">(11) 91333-9419 WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER SECTION -->
+    <!-- BANNER SECTION -->
+    <section class="w-100 float-left sub-banner-con position-relative">
+        <div class="wrapper2">
+            <div class="sub-banner-inner-box banner-inner-box position-relative text-center w-100 float-left">
+                <h1 data-aos="fade-up" data-aos-duration="700">Blog</h1>
+                <p data-aos="fade-up" data-aos-duration="700">Confira nossas principais notícias e publicações sobre<br>
+                    nossa clínica e sáude ocular</p>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-duration="700">
+                    <ol class="breadcrumb d-inline-block mb-0">
+                        <li class="breadcrumb-item d-inline-block"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-white d-inline-block" aria-current="page">Blog</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION -->
+    <!--blog-sec-->
+    <!-- MAIN SECTION -->
+    <div class="blog-posts blogpage-section loadblog-section w-100 float-left">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div id="blog" class="col-xl-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box load-blog float-left w-100 post-item mb-4 hide-blog" data-aos="fade-up"
+                                data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div class="post-image">
+                                        <a href="#">
+                                            <img alt="Importância dos Exames Oculares" src="assets/images/standard_post_img01.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Clínica</span>
+                                        <a href="single-blog.html">
+                                            <h5>A Importância dos Exames Oculares Regulares</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box load-blog float-left w-100 post-item mb-4 hide-blog" data-aos="fade-up"
+                                data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div id="blogslider" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item">
+                                                <img src="assets/images/standard_post_img02.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/images/standard_post_img04.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item active">
+                                                <img src="assets/images/standard_post_img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#blogslider" data-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#blogslider" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Notícia</span>
+                                        <a href="single-blog.html">
+                                            <h5>Tratamento especializado para alinhamento ocular</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box load-blog float-left w-100 post-item mb-4 hide-blog" data-aos="fade-up"
+                                data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div class="post-image">
+                                        <a href="#"><img alt="" src="assets/images/standard_post_img03.jpg"> </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Curiosidade</span>
+                                        <a href="single-blog.html">
+                                            <h5>Tratamento especializado para alinhamento ocular</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box load-blog hide-blog" data-aos="fade-up" data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div class="post-image">
+                                        <a href="#"><img alt="" src="assets/images/standard_post_img03.jpg"> </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Curiosidade</span>
+                                        <a href="single-blog.html">
+                                            <h5>Tratamento especializado para alinhamento ocular</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box load-blog hide-blog" data-aos="fade-up" data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div class="post-image">
+                                        <a href="#"><img alt="" src="assets/images/standard_post_img03.jpg"> </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Curiosidade</span>
+                                        <a href="single-blog.html">
+                                            <h5>Tratamento especializado para alinhamento ocular</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="blog-box hide-blog" data-aos="fade-up" data-aos-duration="700">
+                                <div class="post-item-wrap position-relative">
+                                    <div class="post-image">
+                                        <a href="#"><img alt="" src="assets/images/standard_post_img03.jpg"> </a>
+                                    </div>
+                                    <div class="lower-portion">
+                                        <i class="fas fa-user"></i>
+                                        <span class="text-size-14 text-mr">Por: Dr. Frederico</span>
+                                        <i class="fas fa-tag"></i>
+                                        <span class="text-size-14">Curiosidade</span>
+                                        <a href="single-blog.html">
+                                            <h5>Tratamento especializado para alinhamento ocular</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button-portion loadone_twocol">
+                                        <div class="date">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="mb-0 text-size-14">Dec 20,2022</span>
+                                        </div>
+                                        <div class="button">
+                                            <a class="mb-0 read_more text-decoration-none"
+                                                href="./single-blog.html">Ler mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more d-inline-block m-auto align-top" data-aos="fade-up"
+                            data-aos-duration="700">
+                            <a class="default-btn hover-effect" href="#" id="loadMore">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog-sec-->
+    <!-- FOOTER SECTION -->
+    <section class="footer-main-section w-100 float-left">
+        <div class="container">
+            <div class="footer-inner-con">
+                <div class="footer-box footer-logo-box">
+                    <figure>
+                        <img src="assets/images/footer-logo.png" alt="footer-logo" class="logo__img">
+                    </figure>
+                    <p>Instituto de Olhos do ABC: Compromisso com a Excelência em Oftalmologia desde 1987.
+                        Cuidando da sua visão com tecnologia de ponta e humanização no atendimento.
+                        Seu olhar para o futuro começa aqui.</p>
+                </div>
+                <div class="footer-box footer-pages-links">
+
+                </div>
+                <div class="footer-box contact-details-box">
+                    <h4>Contato</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt"></i>Avenida Coronel Fernando Prestes, 350 - Sala 42
+                            Centro - Santo André - 09020-110 </li>
+                        <li><i class="fas fa-envelope"></i><a
+                                href="mailto:info@medwell.com">clinica@oftalmologia-abc.com.br</a></li>
+                        <li><i class="fas fa-headphones"></i><a href="tel:+568925896325">+55 11 4433-2620</a></li>
+                        <li><i class="fas fa-phone-alt"></i><a href="tel:+12025550153">+55 11 91333-9419 WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box footer-newsletter">
+                    <h4>Agende uma consulta</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="email" placeholder="Seu email:">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright-con w-100 float-left text-center">
+        <p class="mb-0">Copyright © 1987 Instituto de Olhos ABC Todos os direitos reservados.</p>
+    </div>
+    <a id="button"></a>
+    <!-- FOOTER SECTION -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/humbleScroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/loadmore.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        $(window).on('load', function () {
+            // Preloader
+            $('.loader').fadeOut();
+            $('.loader-mask').delay(350).fadeOut('slow');
+        });
+    </script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            }
+            else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
