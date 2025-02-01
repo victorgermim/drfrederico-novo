@@ -437,6 +437,12 @@ body {
     background: #f6f9ff;
 }
 
+.img_dr_about {
+    width: 90%;
+    border-radius: 10%;
+    padding-top: 35%;
+}
+
 .design-img:before {
     left: -363px;
     bottom: -161px;
@@ -2570,6 +2576,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .lead{
   font-size:13px;
 }
+.float{
+	position:fixed;
+	width:48px;
+	height:48px;
+	bottom:80px;
+	right:24px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:11px;
+}
+
 .loader div {
     background-color: var(--accent);
     display: inline-block;

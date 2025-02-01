@@ -2005,7 +2005,7 @@
     #button {
         width: 45px;
         height: 45px;
-        bottom: 75px;
+        bottom: 135px;
         right: 24px;
     }
 
@@ -2054,6 +2054,28 @@
 
     .generic-title {
         margin-bottom: 25px;
+    }
+
+    .img_dr_about {
+        width: 90%;
+        border-radius: 10%;
+        padding-top: 25%;
+        margin-left: 130px;        
+    }
+
+    .float{
+        position:fixed;
+        width:48px;
+        height:48px;
+        bottom:75px;
+        right:22px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+      z-index:100;
     }
 
     .banner-con {
