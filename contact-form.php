@@ -1,48 +1,49 @@
 <?php
-$fname= $_POST['fname'];
-$email= $_POST['email'];
-$phone= $_POST['phone'];
-$subject= $_POST['subject'];
+// Definir os dados do formulário
+$fname = isset($_POST['fname']) ? trim($_POST['fname']) : null;
+$email = isset($_POST['email']) ? trim($_POST['email']) : null;
+$phone = isset($_POST['phone']) ? trim($_POST['phone']) : null;
+$date = isset($_POST['date']) ? trim($_POST['date']) : "Não informado";
+$subject = isset($_POST['subject']) ? trim($_POST['subject']) : "Sem mensagem";
 
-if(isset($fname) && isset($email))
-{
-	global $to_email,$vpb_message_body,$headers;
-	$to_email="info@savingforenergy.com";
-	$email_subject="Inquiry From Contact Page";
-	$vpb_message_body = nl2br("Dear Admin,\n
-	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
-	
-	Name: ".$fname."\n
-	Email Address: ".$email."\n
-	Phone No: ".$phone."\n
-	Comment: ".$subject."\n
-	
-	
-	Thank You!\n\n");
-	
-	//Set up the email headers
-    $headers      = "From: $fname <$email>\r\n";
-    $headers   .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    $headers   .= "Message-ID: <".time().rand(1,1000)."@".$_SERVER['SERVER_NAME'].">". "\r\n"; 
-	 if(@mail($to_email, $email_subject, $vpb_message_body, $headers))
-		{
-			  $status='Success';
-			//Displays the success message when email message is sent
-			  $output="Congrats ".$fname.", Thank you for your inquiry. Our sales team has been notified and will be in touch shortly.";
-		} 
-		else 
-		{
-			 $status='error';
-			 //Displays an error message when email sending fails
-			  $output="Sorry, your email could not be sent at the moment. Please try again or contact this website admin to report this error message if the problem persist. Thanks.";
-		}
-		
+// Verificar se os campos obrigatórios estão preenchidos
+if (!empty($fname) && !empty($email)) {
+    $to_email = "vitgermim@gmail.com";
+    $email_subject = "Nova solicitação de consulta - Clínica de Oftalmologia";
+
+    // Criar o corpo da mensagem
+    $vpb_message_body = nl2br("
+        <strong>Prezado(a) Administrador(a),</strong><br><br>
+        Um novo paciente enviou uma solicitação de agendamento de consulta através do site.<br><br>
+        <strong>Detalhes do Paciente:</strong><br>
+        Nome: $fname<br>
+        E-mail: $email<br>
+        Telefone: $phone<br>
+        Data desejada: $date<br>
+        Mensagem: $subject<br><br>
+        <strong>Por favor, entre em contato para confirmar o agendamento.</strong><br><br>
+        Atenciosamente,<br>
+        Clínica de Oftalmologia ABC
+    ");
+
+    // Configurar os cabeçalhos do e-mail
+    $headers = "From: $fname <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+    // Enviar o e-mail
+    if (@mail($to_email, $email_subject, $vpb_message_body, $headers)) {
+        $status = 'success';
+        $output = "Obrigado, $fname! Sua solicitação de consulta foi enviada com sucesso. Nossa equipe entrará em contato para confirmação.";
+    } else {
+        $status = 'error';
+        $output = "Desculpe, houve um erro ao enviar sua solicitação. Por favor, tente novamente mais tarde.";
+    }
+} else {
+    $status = 'error';
+    $output = "Por favor, preencha os campos obrigatórios (Nome e E-mail).";
 }
-else{
-	$status='error';
-	$output="please fill require fields";
-	
-	}
-echo json_encode(array('status'=> $status, 'msg'=>$output));
 
+// Retornar a resposta em JSON
+echo json_encode(array('status' => $status, 'msg' => $output));
 ?>
