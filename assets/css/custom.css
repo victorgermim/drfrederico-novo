@@ -179,7 +179,7 @@ body {
     margin-bottom: 49px;
     color: var(--white-color);
     width: 97%;
-    margin-left: -28px;
+    margin-left: 28px;
     background-color: #fc9905 !important;
     padding: 15px;
 }
